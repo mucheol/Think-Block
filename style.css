@@ -56,6 +56,9 @@ h1 {
 h2 {
   font-size: 40px;
 }
+h3 {
+  font-size: 32px;
+}
 
 /* Think Block */
 .wrapper {
@@ -204,7 +207,7 @@ header.active nav ul li a:hover {
 }
 
 /* CONTENT01 */
-.content01, .content03 {
+.content01, .content03, .content05,.content06 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,10 +252,10 @@ header.active nav ul li a:hover {
   letter-spacing: -1px;
   line-height: 15px;
 }
-.content02 .btn {
+.content03 .btn {
   margin-top: 30px;
 }
-.content02 .btn a {
+.content03 .btn a {
   width: 400px;
   height: 100px;
   padding: 8px 25px;
@@ -269,7 +272,7 @@ header.active nav ul li a:hover {
   font-size: 15px;
 }
 .content04 .chartBox {
-  margin: 50px auto;
+  margin: 70px auto;
 }
 .content04 .chart { 
   display: flex;
@@ -279,9 +282,10 @@ header.active nav ul li a:hover {
 }
 .chart-info span {
   color: #939393;
+  line-height: 25px;
 }
 .chart-top .chart-info{
-  margin-right: 200px;
+  margin-right: 150px;
 }
 .chart-img {
   display: flex;
@@ -292,4 +296,69 @@ header.active nav ul li a:hover {
 }
 .chart-bottom .chart-info{
   margin-left: 200px;
+}
+/* CONTENT05 */
+.content05 .countingBox {
+  display: flex;
+  padding: 20px 0;
+}
+.content05 .countingBox .count-num {
+  font-size: 22px;
+}
+.content05 .countingBox .count02 {
+  margin-left: 50px;
+}
+.content05 .countingBox .count-des {
+  margin-top: 5px;
+  font-size: 0.75rem;
+}
+.content05 .companies {
+  display: flex;
+}
+.content05 .companies .company {
+  font-size: 1.2rem;
+  margin: 0 2rem;
+  text-align: center;
+}
+/* CONTENT06 */
+.tabBox {
+  margin-top: 10px;
+}
+.tabBox .tabMenu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(211, 211, 211);
+  border-radius: 20px;
+}
+.tabBox .tabMenu .menu {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.tabBox .tabContents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabBox .tabContents .tab-content{
+  width: 40%;
+  margin: 30px 2%;
+}
+.tabBox .tabContents .tab-content a{
+  display: flex;
+}
+.tabBox .tabContents .tab-content-img{
+  width: 30px;
+  margin-right: 15px;
+}
+.tabBox .tabContents .tab-content-img img {
+  width: 100%;
+}
+.tabBox .tabContents .tab-content .tab-content-text .tab-content-title{
+  color: rgb(8, 2, 61);
+}
+.tabBox .tabContents .tab-content .tab-content-text .tab-content-des{
+  color: rgb(94, 94, 94);
 }
