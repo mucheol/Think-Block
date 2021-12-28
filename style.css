@@ -52,6 +52,7 @@ table {
   box-sizing: border-box;
   font-family: "Pretendard";
   word-break: keep-all;
+  letter-spacing: -0.025em;
 }
 a, a:link {
   color: #fff;
@@ -59,16 +60,17 @@ a, a:link {
 }
 h1 {
   font-size: 52px;
-  line-height: 62px;
+  line-height: 61px;
 }
 h2 {
   font-size: 32px;
+  line-height: 39px;
 }
 h3 {
   font-size: 32px;
 }
 h4 {
-  font-size: 16px;
+  font-size: 21.33px;
 }
 .c-b {
   color: var(--hj-blue);
@@ -116,7 +118,7 @@ h4 {
 }
 /* HEADER */
 header {
-	width: 100%;
+	width: 105%;
 	height: 90px;
 	position: fixed;
 	top: 0;
@@ -218,8 +220,7 @@ nav ul li a:hover {
 .intro-page h4 {
   margin-top: 20px;
   margin-left: 10px;
-  font-size: 21px;
-  line-height: 28px;
+  line-height: 25.33px;
   font-weight: 300;
 }
 .intro-page .btn {
@@ -312,7 +313,8 @@ nav ul li a:hover {
 .content .textBox p {
   width: 510px;
   margin-top: 20px;
-  line-height: 20px;
+  line-height: 22px;
+  font-size: 16px;
 }
 .title {
   font-size: 12px;
@@ -388,7 +390,7 @@ nav ul li a:hover {
 .content02 .itemBox .item .item-des {
   font-size: 14px;
   letter-spacing: -1px;
-  line-height: 20px;
+  line-height: 17px;
 }
 /* CONTENT03 */
 .content03 .imgBox {
@@ -457,7 +459,7 @@ nav ul li a:hover {
 }
 /* CONTENT04 */
 .content04 .textBox p {
-  width: 460px;
+  width: 550px;
   margin: 20px auto 0;
 }
 .content04 .textBox p span {
@@ -481,9 +483,12 @@ nav ul li a:hover {
 }
 .chart-info p {
   color: #1a5c9e;
+  font-size: 16px;
+  line-height: 18px;
 }
 .chart-info span {
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 20px;
 }
 .chart-top .chart-info{
   margin-right: 125px;
@@ -540,7 +545,8 @@ nav ul li a:hover {
   width: 60px;
 }
 .content05 .countingBox .count-num {
-  font-size: 22px;
+  font-size: 42px;
+  line-height: 39px;
 }
 .content05 .countingBox .count02 {
   margin-left: 50px;
@@ -555,7 +561,8 @@ nav ul li a:hover {
 .content05 .companies .company {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 28px;
+  line-height: 32px;
   margin: 0 2rem;
   text-align: center;
 }
@@ -688,7 +695,7 @@ nav ul li a:hover {
   box-shadow: 0 0 10px var(--hj-gray);
 }
 .event .event-day {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 18px;
   color: #002884;
 }
@@ -696,11 +703,15 @@ nav ul li a:hover {
   font-size: 14px;
 }
 .event .event-title {
-  width: 120px;
+  width: 122px;
   margin: 30px auto 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 .event .event-des {
   color: gray;
+  font-size: 14px;
+  line-height: 17px;
 }
 .event .btnBox {
   display: flex;
@@ -752,11 +763,15 @@ footer {
 }
 footer .footer-title {
   padding-top: 60px;
+  font-size: 38px;
+  line-height: 42px;
 }
 .searchBox form{
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-size: 14px;
+  line-height: 22px;
 }
 .emailBox {
   position: relative;
@@ -833,8 +848,8 @@ footer .footer-title {
     background-color: #fff;
   }
   h1 {
-    font-size: 26px;
-    line-height: 35px;
+    font-size: 28px;
+    line-height: 37px;
   }
   h2 {
     font-size: 18px;
@@ -1060,6 +1075,9 @@ footer .footer-title {
     padding-top: 50px;
     min-height: auto;
   }
+  .title {
+    line-height: 18px;
+  }
   
   /* CONTENT 01 */
   .content01 .title {
@@ -1104,7 +1122,8 @@ footer .footer-title {
     font-size: 14px;
   }
   .content02 .itemBox .item .item-des {
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 15px;
   }
   /* CONTENT03 */
   .content03 .title {
@@ -1126,8 +1145,7 @@ footer .footer-title {
   }
   .content03 .textBox p {
     position: relative;
-    /* right: 55px; */
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     max-width: calc(100vw - 40px);
     width: 100%;
@@ -1147,6 +1165,9 @@ footer .footer-title {
   .content04 .textBox.al-c div {
     justify-content: left;
   }
+  .content04 .textBox p span {
+    font-size: 14px;
+}
   .content04 .textBox.al-c p {
     font-size: 14px;
     line-height: 22px;
@@ -1156,6 +1177,14 @@ footer .footer-title {
   .content04 .chartBox {
     position: relative;
     width: calc(100vw - 40px);
+  }
+  .chart-info p {
+    font-size: 12px;
+    line-height: 16px;
+}
+  .chart-info span {
+    font-size: 10px;
+    line-height: 20px;
   }
   .content04 .chart {
     position: absolute;
@@ -1215,6 +1244,10 @@ footer .footer-title {
     line-height: 22px;
     width: calc(100vw - 60px);
   }
+  .content05 .countingBox .count-num {
+    font-size: 32px;
+    line-height: 39px;
+}
   .content05 .companies {
     display: flex;
     align-items: center;
@@ -1222,8 +1255,8 @@ footer .footer-title {
     width: calc(100vw - 60px);
   }
   .content05 .companies .company {
-    font-size: 16px;
-    margin: 0 10px;
+    font-size: 18px;
+    line-height: 22px;
     margin: 0 4vw;
   }
   .content05 .imgBox {
@@ -1237,13 +1270,15 @@ footer .footer-title {
     width: auto;
   }
   .content06 .textBox p {
+    font-size: 14px;
     width: calc(100vw - 60px);
   }
   .vaex-link {
     width: 90vw;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 30px;
   }
   /* CONTENT07 */
   .content07 {
@@ -1259,6 +1294,8 @@ footer .footer-title {
   }
   .content07 .textBox p {
     width: 100%;
+    font-size: 12px;
+    line-height: 15px;
   }
   .team-slider {
     width: 100%;
@@ -1274,10 +1311,11 @@ footer .footer-title {
   }
   .team-slider .multiple-items .name {
     font-size: 11px;
+    line-height: 15px;
   }
   .team-slider .multiple-items .job {
     font-size: 11px;
-    line-height: 10px;
+    line-height: 15px;
     color: var(--hj-gray);
   }
   /* CONTENT08 */
@@ -1338,6 +1376,10 @@ footer .footer-title {
     display: none;
   } 
   /* FOOTER */
+  footer .footer-title {
+    font-size: 18px;
+    line-height: 22px;
+}
   .emailBox {
     width: 90vw;
   }
