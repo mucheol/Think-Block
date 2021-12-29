@@ -7,9 +7,23 @@ $(document).ready(function(){
   
 	$window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
 	pageOffsetTop = $page.offset().top + 100;
-
   
 });
+// nav bar animation
+let horizontalUnderLine = document.getElementById('horizontal-underline');
+let horizontalMenus = document.querySelectorAll('nav a');
+
+horizontalMenus.forEach((menu) => 
+  menu.addEventListener('click', (e) => horizontalIndicator(e))
+);
+
+function horizontalIndicator(e) {
+  horizontalUnderLine.style.left = e.currentTarget.offsetLeft + 'px';
+  horizontalUnderLine.style.width = e.currentTarget.offsetWidth + 'px';
+  horizontalUnderLine.style.top = e.currentTarget.offsetTop + e.currentTarget.offsetHeight + 'px';
+};
+
+
 // HAMBURGER
 $('#line-wrapper').click(function(){
   /* 추가된 부분 */
@@ -32,4 +46,18 @@ $('.btn').hover(function(){
 },function(){
   $(this).children('.btnBack').removeClass('goUp');
   $(this).children('.btnBack').addClass('goDown');
+});
+
+// LOGO SLIDE
+$('.variable-width').slick({
+  dots: false,
+  infinite: true,
+  speed: 3000,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 700,
+  pauseOnHover: true,
+  draggable: true
 });
