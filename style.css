@@ -152,7 +152,7 @@ header.active {
   justify-content: center;
   position: relative;
   float: left;
-  width: 130px;
+  width: 150px;
   height: 90px;
   margin-top: 5px;
   transition: .5s;
@@ -341,7 +341,7 @@ nav a {
 .content01 .imgBox {
   width: 50%;
   height: 100%;
-  background: url("/img/1.welcome.jpg");
+  background: url("/img/1.welcome.png");
   background-size: cover;
   background-position: center;
 }
@@ -431,56 +431,7 @@ nav a {
   width: 800px;
   margin-left: -250px;
 }
-.content03 .btn {
-  position: relative;
-  width: 150px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: var(--hj-yellow);
-  margin-top: 30px;
-  overflow: hidden;
-}
-.content03 .btn .btnBack {
-  display: block;
-  position: relative;
-  right: 25px;
-  width: 200px;
-  height: 100px;
-  background-color: var(--hj-blue);
-}
-.content03 .btn .btnBack.goUp {
-  animation: slideUp .5s forwards;
-}
-.content03 .btn .btnBack.goDown {
-  animation: slideDown .4s forwards;
-}
-@keyframes slideUp {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-75px);
-  }
-}
-@keyframes slideDown {
-  from {
-    transform: translateY(-75px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-.content03 .btn a {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 12px;
-  z-index: 10;
-}
+
 /* CONTENT04 */
 .content04 {
   width: 100vw;
@@ -512,7 +463,7 @@ nav a {
   align-items: end;
 }
 .content04 .chart-bottom {
-  margin-left: 100px;
+  margin-left: 0;
 }
 .content04 .chart { 
   display: flex;
@@ -527,7 +478,7 @@ nav a {
   line-height: 20px;
 }
 .chart-top .chart-info{
-  margin-right: 200px;
+  margin-right: 145px;
   z-index: 2;
 }
 .chart-top .chart-info:nth-child(2) {
@@ -545,10 +496,10 @@ nav a {
   height: 130%;
 }
 .chart-bottom .chart-info{
-  margin-left: 160px;
+  margin-left: 215px;
 }
 .chart-bottom .chart-info:nth-child(3){
-  margin-left: 185px;
+  margin-left: 100px;
 }
 
 /* CONTENT05 */
@@ -579,9 +530,9 @@ nav a {
 }
 .content05 .imgBox {
   position: absolute;
-  right: 100px;
-  width: 1000px;
-  height: 560px;
+  right: 350px;
+  width: 1100px;
+  height: 580px;
   background: url(/img/5.network.png);
   background-position: center;
   background-size: cover;
@@ -660,7 +611,6 @@ nav a {
   width: 100%;
   background-color: #fff;
 }
-
 .content07 .title {
   justify-content: center;
 }
@@ -709,6 +659,9 @@ nav a {
   top: 0;
   left: 0;
   width: 100%;
+}
+.team-slider .multiple-items .item:nth-child(1) .item-img img {
+  transform: scale(1.2);
 }
 .team-slider .multiple-items .item:nth-child(4) .item-img img {
   transform: scale(1.2);
@@ -797,7 +750,7 @@ nav a {
   min-height: 10vh;
 }
 .content09 .content-inner {
-  width: 1280px;
+  width: 1700px;
   height: 100%;
   margin: 0 auto;
 }
@@ -818,9 +771,6 @@ nav a {
   height: 100%;
 }
 .slick-arrow {
-  display: none !important;
-}
-.slick-dots {
   display: none !important;
 }
 /* FOOTER */
@@ -1087,7 +1037,7 @@ footer .footer-title {
     align-items: center;
   }
   .m-logo {
-    width: 120px;
+    width: 135px;
     margin: 0 auto;
   }
   .m-logo img{
@@ -1111,9 +1061,9 @@ footer .footer-title {
     line-height: 19px;
     margin-left: 0;
   }
-.scroll {
-  display: none;
-}
+  .scroll {
+    display: none;
+  }
 
   /* CONTENT */
   .content {
@@ -1144,12 +1094,13 @@ footer .footer-title {
     height: 300px;
   }
   .content01 .textBox {
-    width: 85vw;
+    width: 84vw;
     margin-top: 60px;
     padding-bottom: 35px;
+    padding-left: 8vw;
   }
   .content01 .textBox h2 {
-    width: 90vw;
+    width: 100%;
   }
   .content01 .textBox p {
     font-size: 16px;
@@ -1195,9 +1146,10 @@ footer .footer-title {
   }
   .content03 .textBox {
     align-items: flex-start;
-    width: 96vw;
+    width: calc(100vw - 60px);
     margin-top: 60px;
     margin-left: 30px;
+    padding-right: 0;
     padding-bottom: 35px;
     text-align: left;
   }
@@ -1222,12 +1174,12 @@ footer .footer-title {
   align-items: center;
 }
   .content04 .content-inner {
-    width: auto;
+    width: calc(100vw - 40px);
     margin: 0 auto;
     z-index: 9;
   }
   .content04 .textBox.al-c {
-    width: auto;
+    width: 100%;
     text-align: left;
   }
   .content04 .textBox.al-c div {
@@ -1236,12 +1188,12 @@ footer .footer-title {
   .content04 .textBox p span {
     font-size: 14px;
     line-height: 20px;
-}
+  }
   .content04 .textBox.al-c p {
     line-height: 22px;
     letter-spacing: 0.1px;
     font-size: 16px;
-    width: 310px;
+    width: 100%;
     margin: 20px 0 0;
   }
   .content04 .chartBox {
@@ -1325,7 +1277,7 @@ footer .footer-title {
   .content05 .textBox {
     margin-top: 60px;
     margin-left: 30px;
-    width: 280px;
+    width: calc(100vw - 60px);
     padding-bottom: 35px;
   }
   .content05 .textBox p {
@@ -1398,7 +1350,7 @@ footer .footer-title {
     padding: 50px 10px;
   }
   .content07 .textBox.al-c {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 40px);
     text-align: left;
     padding-left: 20px;
   }
