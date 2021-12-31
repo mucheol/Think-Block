@@ -60,18 +60,18 @@ a, a:link {
   text-decoration: none;
 }
 h1 {
-  font-size: 80px;
-    line-height: 89px;
+  font-size: 60px;
+  line-height: 67px;
 }
 h2 {
-  font-size: 46px;
-  line-height: 52px;
+  font-size: 34px;
+  line-height: 40px;
 }
 h3 {
-  font-size: 32px;
+  font-size: 28px;
 }
 h4 {
-  font-size: 24px;
+  font-size: 18px;
 }
 .c-b {
   color: var(--hj-blue);
@@ -90,10 +90,10 @@ h4 {
 }
 .top-btn {
   position: fixed;
-  right: 30px;
-  bottom: 30px;
-  width: 60px;
-  height: 60px;
+  right: 22px;
+  bottom: 22px;
+  width: 45px;
+  height: 45px;
   background-color: rgba(255,255,255,0.3);
   border-radius: 50%;
   z-index: 999999;
@@ -102,8 +102,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 .top-btn img {
   width: 50%;
@@ -120,7 +120,7 @@ h4 {
 /* HEADER */
 header {
 	width: 105%;
-	height: 90px;
+	height: 68px;
 	position: fixed;
 	top: 0;
 	left: 50%;
@@ -134,7 +134,7 @@ header {
 }
 header.active {
 	width: 105%;
-	height: 90px;
+	height: 65px;
 	position: fixed;
 	top: 0px;
 	box-sizing: border-box;
@@ -152,9 +152,9 @@ header.active {
   justify-content: center;
   position: relative;
   float: left;
-  width: 150px;
-  height: 90px;
-  margin-top: 5px;
+  width: 145px;
+  height: 65px;
+  margin-top: 4px;
   transition: .5s;
 }
 .logo a {
@@ -163,12 +163,12 @@ header.active {
 }
 .logo a img {
   width: 100%;
-  line-height: 90px;
+  line-height: 65px;
 }
 
 /* HEADER RIGHT */
 .header-right {
-  height: 90px;
+  height: 65px;
 }
 nav {
   position: relative;
@@ -179,7 +179,7 @@ nav {
 }
 nav a {
   color: var(--hj-white) !important;
-  margin: 0 30px;
+  margin: 0 23px;
 	font-size: 20px;
 	font-weight: 200;
 }
@@ -203,7 +203,7 @@ nav a {
 .intro-page {
   position: relative;
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 45px;
   background-color: #03101b;
   background: url("/img/intro-img.png");
   background-repeat: no-repeat;
@@ -213,52 +213,25 @@ nav a {
 }
 .intro-page .content{
   display: flex;
-  margin-top: 250px;
-  padding-left: 10px;
+  margin-top: 190px;
+  padding-left: 7px;
   color: #fff;
 }
 .intro-page .content .textBox {
-  width: 850px;
+  width: 600px;
   padding: 2px;
-  margin-left: 10px;
+  margin-left: 8px;
   z-index: 99;
 }
 .intro-page h4 {
-  margin-top: 20px;
-  margin-left: 10px;
-  line-height: 30px;
+  margin-top: 15px;
+  margin-left: 8px;
+  line-height: 23px;
   font-weight: 300;
-  font-size: 29px;
-}
-.intro-page .btn {
-  position: relative;
-  font-size: 12px;
-  border-radius: 25px;
-  margin-top: 150px;
-}
-.intro-page .btn a {
-  margin: 5px;
-  padding: 16.5px 48px;
-  border-radius: 25px;
-  overflow: hidden;
-  transition: .4s;
-}
-.intro-page .btn a:first-child {
-  background-color: var(--hj-yellow);
-}
-.intro-page .btn a:first-child:hover {
-  background-color: var(--hj-blue);
-}
-.intro-page .btn a:nth-child(2) {
-  border: 2px solid #fff;
-}
-.intro-page .btn a:nth-child(2):hover {
-  border: 2px solid #fff;
-  color: var(--hj-yellow);
-  border: 2px solid var(--hj-yellow);
+  font-size: 22px;
 }
 .intro-page .imgBox {
-  width: 550px;
+  width: 390px;
 }
 .intro-page .imgBox img {
   width: 100%;
@@ -274,7 +247,7 @@ nav a {
   text-align: center;
 }
 .scroll img {
-  width: 50px;
+  width: 38px;
   animation: scroll 2s linear infinite;
 }
 @keyframes scroll {
@@ -293,7 +266,7 @@ nav a {
   width: 1280px;
   min-height: 50vh;
   margin: 0 auto;
-  padding: 80px 50px;
+  padding: 60px 38px;
 }
 .content01, .content03, .content05,.content06 {
   display: flex;
@@ -320,11 +293,11 @@ nav a {
 .content .textBox p {
   width: 510px;
   margin-top: 20px;
-  line-height: 25px;
+  line-height: 30px;
   font-size: 20px;
 }
 .title {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
   text-transform: uppercase;
   display: flex;
@@ -354,14 +327,12 @@ nav a {
 /* CONTENT02 */
 .content02 {
   width: 100%;
-  height: 520px;
-  padding: 0;
+  padding: 40px 0;
   background-color: var(--hj-navy);
   color: var(--hj-white);
     min-height: 42vh;
 }
 .content02 .titleBox {
-  padding-top: 70px;
   width: 1280px;
   margin:0 auto;
 }
@@ -371,7 +342,7 @@ nav a {
 .content02 .itemBox {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 22px 0;
 }
 .content02 .itemBox .item {
   display: flex;
@@ -379,8 +350,8 @@ nav a {
   justify-content: center;
   position: relative;
   align-items: center;
-  width: 270px;
-  height: 310px;
+  width: 200px;
+  height: 240px;
   margin: 0 15px;
   border-radius: 10px;
   text-align: center;
@@ -390,12 +361,12 @@ nav a {
 .content02 .itemBox .item img{
   position: absolute;
   top: 15%;
-  width: 110px;
+  width: 85px;
   transition: .5s;
 }
 .content02 .itemBox .item .item-name {
-  font-size: 32px;
-  padding-top: 172px;
+  font-size: 28px;
+  padding-top: 130px;
   margin: 15px auto;
 }
 .content02 .itemBox .item .item-des {
@@ -470,11 +441,11 @@ nav a {
 }
 .chart-info p {
   color: #1a5c9e;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23px;
 }
 .chart-info span {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
 }
 .chart-top .chart-info{
@@ -498,8 +469,8 @@ nav a {
 .chart-bottom .chart-info{
   margin-left: 215px;
 }
-.chart-bottom .chart-info:nth-child(3){
-  margin-left: 100px;
+.chart-bottom .chart-info:nth-child(2){
+  width: 200px;
 }
 
 /* CONTENT05 */
@@ -509,6 +480,7 @@ nav a {
   box-shadow: 1px -1px 0px 0px #515151;
   overflow: hidden;
   min-height: 30vh;
+  height: 400px;
 }
 .content05 .title {
   display: none;
@@ -520,6 +492,7 @@ nav a {
 }
 .content05 .textBox {
   width: 50%;
+  margin-left: 25px;
   color: var(--hj-white);
   z-index: 2;
 }
@@ -531,8 +504,8 @@ nav a {
 .content05 .imgBox {
   position: absolute;
   right: 350px;
-  width: 1100px;
-  height: 580px;
+  width: 800px;
+  height: 450px;
   background: url(/img/5.network.png);
   background-position: center;
   background-size: cover;
@@ -573,7 +546,7 @@ nav a {
   margin-bottom: 19px;
 }
 .content06 .textBox {
-  width: 100%;
+  width: 62%;
   text-align: left;
   color: #f1f1f1;
 }
@@ -648,8 +621,8 @@ nav a {
 }
 .team-slider .multiple-items .item .item-img {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background-color: #c8c8c8;
   overflow: hidden;
@@ -678,8 +651,8 @@ nav a {
   line-height: 50px;
 }
 .team-slider .multiple-items .job {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 20px;
   color: var(--hj-gray);
   margin-top: -5px;
 }
@@ -688,12 +661,11 @@ nav a {
 .content08 {
   background-color: #f3f7f8;
   width: 100vw;
-  height: 550px;
   min-height: auto;
-  background-image: url("/img/event-back.png");
-  background-size: cover;
+  background-image: url(/img/event-back.png);
+  background-size: 140%;
   background-position: center;
-  background-position-x: -1800px;
+  background-position-x: -115vw;
   background-repeat: no-repeat;
 }
 .content08 .content-inner {
@@ -721,28 +693,28 @@ nav a {
 .event {
   text-align: left;
   display: flex;
-  height: 80px;
-  padding: 0px 0px;
+  height: 70px;
+  padding: 0px;
   transition: .5s;
 }
 .event .event-ym {
   width: 225px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
 }
 .event .event-day {
   width: 150px;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
 }
 .event .event-title {
   width: 400px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 600;
 }
 .event .event-des {
   width: 300px;
-  font-size: 20px;
+  font-size: 18px;
 }
 /* CONTENT09 */
 .content09 {
@@ -788,7 +760,7 @@ footer .footer-title {
   display: flex;
   justify-content: center;
   padding-top: 50px;
-  font-size: 26px;
+  font-size: 23px;
 }
 .contact .contact-item {
   margin: 0 30px;
@@ -824,7 +796,7 @@ footer .footer-title {
     top: 10px;
 }
 .sns-icon .iconBox a img{
-  width: 36px;
+  width: 30px;
 }
 .sns-icon .iconBox {
   transition: .2s;
@@ -1240,10 +1212,9 @@ footer .footer-title {
   .content04 .chart-bottom {
     position: absolute;
     top: 0;
-    right: 0;
     text-align: left;
     margin-left: 0;
-    width: auto;
+    width: 100%;
   }
   .chart-bottom .chart-info {
     margin-bottom: 95px;
@@ -1252,6 +1223,9 @@ footer .footer-title {
   .chart-bottom .chart-info:first-child {
     margin-top: 85px;
   }
+  .chart-bottom .chart-info:nth-child(2) {
+    width: auto;
+}
   .chart-bottom .chart-info:nth-child(3) {
     margin-left: 55vw;
 }
@@ -1284,6 +1258,7 @@ footer .footer-title {
     font-size: 16px;
     line-height: 22px;
     width: calc(100vw - 60px);
+    margin-top: 28px;
   }
   .content05 .countingBox .count-num {
     font-size: 32px;
@@ -1388,6 +1363,7 @@ footer .footer-title {
   }
   /* CONTENT08 */
   .content08 {
+    background-image: none;
     padding: 30px 20px;
   }
   .content08 .content-inner {
