@@ -205,10 +205,10 @@ nav a {
   height: 100vh;
   padding-top: 45px;
   background-color: #03101b;
-  background: url("/img/intro-img.png");
+  background: url("/img/intro-img5.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: bottom;
+  background-position-y: center;
   z-index: 99;
 }
 .intro-page .content{
@@ -218,17 +218,26 @@ nav a {
   color: #fff;
 }
 .intro-page .content .textBox {
-  width: 600px;
+  width: 700px;
   padding: 2px;
   margin-left: 8px;
   z-index: 99;
 }
+.intro-page h1 {
+  letter-spacing: 0;
+}
 .intro-page h4 {
-  margin-top: 15px;
-  margin-left: 8px;
+  margin-top: 57px;
   line-height: 23px;
   font-weight: 300;
   font-size: 22px;
+}
+.intro-page .underLine-line {
+  display: block;
+  width: 85px;
+  height: 2.5px;
+  background-color: rgb(138 144 155 / 61%);
+  margin: 50px 0 30px;
 }
 .intro-page .imgBox {
   width: 390px;
@@ -659,18 +668,28 @@ nav a {
 
 /* CONTENT08 */
 .content08 {
+  position: relative;
   background-color: #f3f7f8;
   width: 100vw;
   min-height: auto;
-  background-image: url(/img/event-back.png);
-  background-size: 140%;
-  background-position: center;
-  background-position-x: -115vw;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 .content08 .content-inner {
+  position: relative;
   width: 1280px;
   margin: 0 auto;
+}
+.content08-backImg {
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  clip-path: polygon(0 0%, 0% 100%, 100% 500%);
+}
+.content08-backImg2 {
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  clip-path: polygon(0 .6%, 0% 100%, 100% 325%);
 }
 .content08 .title {
   justify-content: flex-start;
@@ -1018,20 +1037,23 @@ footer .footer-title {
   
   /* INTRO PAGE */
   .intro-page {
-    background-position-x: -536px;
-    background-position-y: 125px;
+    background-position-y: center;
+    background-position-x: -150vw;
     background-color: #03101b;
   }
   .intro-page .content {
     margin-top: 100px;
   }
-  .intro-page .textBox {
-    width: 315px;
+  .intro-page .content .textBox {
+    width: calc(100vw - 40px);
   }
   .intro-page h4 {
     font-size: 16px;
     line-height: 19px;
     margin-left: 0;
+  }
+  .intro-page .underLine-line {
+    width: 45px;
   }
   .scroll {
     display: none;
