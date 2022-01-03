@@ -82,6 +82,9 @@ h4 {
 .c-w {
   color: var(--hj-white);
 }
+.c-b2 {
+  color: #99d6ffd4;
+}
 
 /* Think Block */
 .wrapper {
@@ -492,7 +495,7 @@ nav a {
   height: 400px;
 }
 .content05 .title {
-  display: none;
+  /* display: none; */
 }
 .content05 .content-inner {
   width: 1280px;
@@ -537,7 +540,7 @@ nav a {
 /* CONTENT06 */
 .content06 {
   width: 100vw;
-  height: 200px;
+  height: 150px;
   min-height: auto;
   background-color: var(--hj-navy);
   box-shadow: 0 5px 5px -5px #fff;
@@ -551,11 +554,20 @@ nav a {
   z-index: 9;
 }
 .content06 .title {
-  color: var(--hj-white);
-  margin-bottom: 19px;
+  /* color: var(--hj-white);
+  margin-bottom: 19px; */
+  display: none;
+}
+.content06 .textBox h3 {
+  font-weight: 300;
+}
+.content06 h3 span {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 15px;
 }
 .content06 .textBox {
-  width: 62%;
+  width: 80%;
   text-align: left;
   color: #f1f1f1;
 }
@@ -1322,6 +1334,11 @@ footer .footer-title {
   .content06 .textBox p {
     font-size: 14px;
     width: calc(100vw - 60px);
+  }
+  .content06 h3 span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 0;
   }
   .vaexBox {
     width: 100%;
