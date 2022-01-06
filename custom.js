@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 	// 스크롤 헤더
 	var $header = $('header'); //헤더를 변수에 넣기
@@ -9,6 +11,14 @@ $(document).ready(function(){
 	pageOffsetTop = $page.offset().top + 100;
   
 });
+$window.on('scroll', function(){ //스크롤시
+  var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+  $header.toggleClass('active', scrolled); //클래스 토글
+});
+});
+
+
+
 // nav bar animation
 let horizontalUnderLine = document.getElementById('horizontal-underline');
 let horizontalMenus = document.querySelectorAll('nav a');
@@ -34,11 +44,6 @@ $('#line-wrapper').click(function(){
   $('.menu-slide').toggleClass('active');
 })
 
-  $window.on('scroll', function(){ //스크롤시
-    var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-    $header.toggleClass('active', scrolled); //클래스 토글
-  });
-});
 
 $('.btn').hover(function(){
   $(this).children('.btnBack').addClass('goUp');
