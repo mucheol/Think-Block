@@ -48,6 +48,8 @@ table {
   --hj-blue: #062865;
   --hj-navy: #03101b;
 }
+/* 일본어버젼 추가하면 :lang 이런식으로 써야함
+:lang(jp) { font-family: 'Noto Sans CJK', sans-serif;}   */
 * {
   box-sizing: border-box;
   font-family: "Pretendard";
