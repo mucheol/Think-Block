@@ -49,7 +49,7 @@ table {
   --hj-navy: #03101b;
 }
 /* 일본어버젼 추가하면 :lang 이런식으로 써야함
-:lang(jp) { font-family: 'Noto Sans CJK', sans-serif;}   */
+:lang(ja) { font-family: 'Noto Sans CJK', sans-serif;}   */
 * {
   box-sizing: border-box;
   font-family: "Pretendard";
@@ -385,6 +385,7 @@ nav a {
 }
 .content02 .itemBox .item .item-des {
   font-size: 18px;
+  font-weight: 200;
   letter-spacing: -1px;
   line-height: 25px;
 }
@@ -1481,7 +1482,7 @@ footer .footer-title {
   }
   .underLine-line {
     width: 100vw;
-    height: 0.3px;
+    height: 1px;
     background-color: rgb(109, 116, 129);
     margin: 50px 0 10px;
   }
