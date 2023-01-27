@@ -188,7 +188,6 @@ nav a {
 	font-size: 20px;
 	font-weight: 200;
 }
-
 #horizontal-underline{
   position: absolute;
   width: 0;
@@ -197,6 +196,15 @@ nav a {
   left: 0;
   height: 1px;
   transition: .5s;
+}
+#langBox {
+  border:none;
+  background-color: transparent;
+  color: #fff;
+}
+#langBox option {
+  background-color: #1a5c9e8a;
+  color: #000;
 }
 
 /* MOBILE HEADER */
@@ -599,10 +607,12 @@ nav a {
   font-size: 20px;
   line-height: 28px;
 }
-.vaex-web a:hover {
-  color: rgb(161, 161, 161);
+.vaex_home {
+  color: #f1f1f1;
 }
-
+.vaex_home:hover {
+  color: #99d6ffd4;
+}
 /* CONTENT07 */
 .content07 {
   width: 100%;
@@ -747,8 +757,9 @@ nav a {
   font-weight: 600;
 }
 .event .event-des {
-  width: 300px;
+  width: 4150px;
   font-size: 18px;
+  line-height: 18px;
 }
 /* CONTENT09 */
 .content09 {
